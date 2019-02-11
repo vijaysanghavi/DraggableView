@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841F3EAB220D6A8700EF6E22 /* BaseAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F3EA9220D6A8700EF6E22 /* BaseAnimator.swift */; };
+		841F3EAC220D6A8700EF6E22 /* MiniToLargeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F3EAA220D6A8700EF6E22 /* MiniToLargeAnimator.swift */; };
 		843B93A7220443DD00D02530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B93A6220443DD00D02530 /* AppDelegate.swift */; };
 		843B93A9220443DD00D02530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B93A8220443DD00D02530 /* ViewController.swift */; };
 		843B93AC220443DD00D02530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843B93AA220443DD00D02530 /* Main.storyboard */; };
 		843B93AE220443DF00D02530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843B93AD220443DF00D02530 /* Assets.xcassets */; };
 		843B93B1220443DF00D02530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843B93AF220443DF00D02530 /* LaunchScreen.storyboard */; };
 		843B93BC220443DF00D02530 /* DraggableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B93BB220443DF00D02530 /* DraggableViewTests.swift */; };
+		843B93CA2204463900D02530 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B93C92204463900D02530 /* NextViewController.swift */; };
+		843B93CC2204464900D02530 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B93CB2204464900D02530 /* BottomBar.swift */; };
+		843B93D02204616200D02530 /* MiniToLargeViewInterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B93CF2204616200D02530 /* MiniToLargeViewInterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841F3EA9220D6A8700EF6E22 /* BaseAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnimator.swift; sourceTree = "<group>"; };
+		841F3EAA220D6A8700EF6E22 /* MiniToLargeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniToLargeAnimator.swift; sourceTree = "<group>"; };
 		843B93A3220443DD00D02530 /* DraggableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DraggableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843B93A6220443DD00D02530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		843B93A8220443DD00D02530 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,9 @@
 		843B93B7220443DF00D02530 /* DraggableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DraggableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843B93BB220443DF00D02530 /* DraggableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableViewTests.swift; sourceTree = "<group>"; };
 		843B93BD220443DF00D02530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843B93C92204463900D02530 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		843B93CB2204464900D02530 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
+		843B93CF2204616200D02530 /* MiniToLargeViewInterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniToLargeViewInterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				843B93A6220443DD00D02530 /* AppDelegate.swift */,
-				843B93A8220443DD00D02530 /* ViewController.swift */,
+				843B93C62204449600D02530 /* client */,
 				843B93AA220443DD00D02530 /* Main.storyboard */,
 				843B93AD220443DF00D02530 /* Assets.xcassets */,
 				843B93AF220443DF00D02530 /* LaunchScreen.storyboard */,
@@ -94,6 +104,35 @@
 				843B93BD220443DF00D02530 /* Info.plist */,
 			);
 			path = DraggableViewTests;
+			sourceTree = "<group>";
+		};
+		843B93C62204449600D02530 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				843B93C8220444B100D02530 /* animators and interactor */,
+				843B93C7220444A700D02530 /* controllers */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		843B93C7220444A700D02530 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				843B93A8220443DD00D02530 /* ViewController.swift */,
+				843B93C92204463900D02530 /* NextViewController.swift */,
+				843B93CB2204464900D02530 /* BottomBar.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		843B93C8220444B100D02530 /* animators and interactor */ = {
+			isa = PBXGroup;
+			children = (
+				841F3EA9220D6A8700EF6E22 /* BaseAnimator.swift */,
+				841F3EAA220D6A8700EF6E22 /* MiniToLargeAnimator.swift */,
+				843B93CF2204616200D02530 /* MiniToLargeViewInterator.swift */,
+			);
+			path = "animators and interactor";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +236,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843B93CC2204464900D02530 /* BottomBar.swift in Sources */,
+				841F3EAB220D6A8700EF6E22 /* BaseAnimator.swift in Sources */,
+				843B93D02204616200D02530 /* MiniToLargeViewInterator.swift in Sources */,
 				843B93A9220443DD00D02530 /* ViewController.swift in Sources */,
+				843B93CA2204463900D02530 /* NextViewController.swift in Sources */,
 				843B93A7220443DD00D02530 /* AppDelegate.swift in Sources */,
+				841F3EAC220D6A8700EF6E22 /* MiniToLargeAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +407,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EWNKY9MSJT;
 				INFOPLIST_FILE = DraggableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +426,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EWNKY9MSJT;
 				INFOPLIST_FILE = DraggableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
