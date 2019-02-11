@@ -1,2 +1,2 @@
 # DraggableView
-Drap or swipe up to present view controller
+Drap or swipe up to present view controller with animation.
